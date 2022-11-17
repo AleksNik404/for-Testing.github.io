@@ -1,0 +1,33 @@
+.header {
+  background-color: var(--main-dark-color);
+  min-height: 4rem;
+  font-size: 1.8rem;
+
+  position: relative;
+  z-index: 10;
+
+  &-wrapper {
+    justify-content: space-between;
+    padding: 1rem 0rem;
+    margin: 0rem 0rem;
+    // margin: 0rem 1.5rem;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    list-style: none;
+  }
+
+  &__link:active,
+  &__link:visited {
+    color: var(--main-text-color);
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: var(--main-text-color);
+  }
+}

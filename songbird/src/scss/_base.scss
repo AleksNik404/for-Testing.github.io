@@ -1,0 +1,93 @@
+:root {
+  // --main-bg-color-dark: rgba(34, 34, 34);
+
+  --main-text-color: #c8b46e;
+
+  --main-dark-color: #303030;
+  --main-medium-color: #444;
+  --main-light-color: #666;
+
+  --main-dark-color-opacity: rgba(22, 22, 22, 0.8);
+  --main-medium-color-opacity: rgba(48, 48, 48, 0.5);
+  --main-light-color-opacity: rgba(68, 68, 68, 0.5);
+
+  --main-active-color: #b91c1c;
+  --main-active-color-hoverDarke: #991b1b;
+  --main-active-color-hoverlighter: #dc2626;
+  --main-active-color-opacity: rgba(179, 27, 27, 0.4);
+
+  --main-right-color: #e879f9;
+
+  --secondary-color: #ffeb7e;
+  --secondary-color-dark: #c8b46e;
+  --secondary-color-dark2: #a38d3e;
+}
+
+// font-family: 'Bokor', cursive;
+// font-family: 'Metal Mania', cursive;
+// font-family: 'Rubik Glitch', cursive;
+// font-family: 'Walter Turncoat', cursive;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px = 1rem
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-weight: 400;
+  line-height: 1.2;
+
+  min-height: 100vh;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  // font-family: 'Metal Mania', cursive;
+  // font-family: 'Rubik Glitch', cursive;
+
+  font-family: 'Walter Turncoat', cursive;
+  // font-family: 'Bokor', cursive;
+}
+
+.container {
+  max-width: 100rem;
+  padding: 0 3rem;
+
+  margin: 0 auto;
+
+  color: var(--main-text-color);
+
+  @media only screen and (max-width: 1000px) {
+    max-width: 80rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    max-width: 450rem;
+  }
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.align-center {
+  text-align: center;
+}
